@@ -7,5 +7,5 @@ RUN a2enmod rewrite
 RUN printf "<Directory /var/www/html>\nOptions Indexes FollowSymLinks\nAllowOverride All\nRequire all granted\n</Directory>\n" \ > /etc/apache2/conf-available/z-override.conf \ && a2enconf z-override
 
 WORKDIR var/www/html
-
+#EL PUERTO CON EL QUE LO MAPIE EN EL CONTENEDOR ES: 60940, wait yes!!!
 EXPOSE 80

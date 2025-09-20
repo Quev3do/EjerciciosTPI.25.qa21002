@@ -1,5 +1,4 @@
 <?php
-//recuerda usar el localhost:60940, ya que lo mapeaste a ese puerto!
 function calculo($base, $altura){
     $a = ((1/2)*$base)**2;
     $c = $base ** 2;
