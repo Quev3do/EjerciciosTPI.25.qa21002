@@ -17,7 +17,7 @@
         $volumen = $_POST['volumen'];
         $radio = $_POST['radio'];
 
-        $altura = $volumen / (M_PI*($radio**2));
+        $altura = $volumen / (M_PI*(($radio-0.025)**2));
         $altura = round($altura, 2);
 
         echo "Altura: $altura unidades";
