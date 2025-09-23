@@ -11,6 +11,18 @@
         Radio b: <input type="number" name="radio" id="radio" step="0.1">
         <button type="submit">Calcular altura!</button>
     </form>
-    
+
+    <?php
+    if(isset($_POST['volumen']) && isset($_POST['radio'])){
+        $volumen = $_POST['volumen'];
+        $radio = $_POST['radio'];
+
+        $altura = $volumen / (M_PI*($radio**2));
+        $altura = round($altura, 2);
+
+        echo "Altura: $altura unidades";
+    }
+    ?>
+
 </body>
 </html>
